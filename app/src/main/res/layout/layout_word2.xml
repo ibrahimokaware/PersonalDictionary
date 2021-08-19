@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/wordCV"
+android:layout_width="match_parent"
+android:layout_height="@dimen/_32sdp"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_marginTop="@dimen/_4sdp"
+android:layout_marginBottom="@dimen/_4sdp"
+android:layout_marginStart="@dimen/_8sdp"
+android:layout_marginEnd="@dimen/_8sdp"
+app:cardCornerRadius="@dimen/_10sdp">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/wordView"
+        android:layout_width="@dimen/_16sdp"
+        android:layout_height="match_parent"
+        android:background="@color/purple_200"/>
+
+    <TextView
+        android:id="@+id/wordTV"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:lines="1"
+        android:gravity="center_vertical"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="Word"
+        android:textSize="@dimen/_14ssp"/>
+
+    <ImageView
+        android:id="@+id/wordIVFav"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:srcCompat="@drawable/ic_favorite_border" />
+
+    <ImageView
+        android:id="@+id/wordIVVoice"
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:srcCompat="@drawable/ic_volume_up" />
+</LinearLayout>
+</androidx.cardview.widget.CardView>

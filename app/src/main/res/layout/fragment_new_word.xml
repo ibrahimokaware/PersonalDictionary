@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NewWordFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_12sdp">
+
+        <TextView
+            android:id="@+id/addWordTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Word"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/addWordET"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/edit_text_background"
+            android:inputType="text"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textColor="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addWordTV" />
+
+        <TextView
+            android:id="@+id/addWordTVNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="Note, Definition Or Example"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addWordET" />
+
+        <EditText
+            android:id="@+id/addWordETNote"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_100sdp"
+            android:background="@drawable/edit_text_background"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:padding="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textColor="@color/primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addWordTVNote" />
+
+        <TextView
+            android:id="@+id/addWordButton"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:text="Add"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/statusBarLight"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:background="@drawable/button_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addWordETNote" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

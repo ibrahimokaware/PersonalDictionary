@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_words"
+        android:icon="@drawable/ic_words"
+        android:title="Words" />
+    <item
+        android:id="@+id/item_categories"
+        android:icon="@drawable/ic_categories"
+        android:title="Categories" />
+    <item
+        android:id="@+id/item_new_word"
+        android:icon="@drawable/ic_new_word"
+        android:title="New Word"/>
+</menu>

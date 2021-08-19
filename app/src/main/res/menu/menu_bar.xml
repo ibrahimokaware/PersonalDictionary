@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--    <item-->
+<!--        android:id="@+id/item_search"-->
+<!--        android:icon="@drawable/ic_search"-->
+<!--        app:showAsAction="ifRoom"-->
+<!--        android:title="Search" />-->
+
+    <item android:id="@+id/item_sort"
+        android:icon="@drawable/ic_sort"
+        app:showAsAction="ifRoom"
+        android:title="sort">
+
+        <menu>
+            <item
+                android:id="@+id/item_latest"
+                android:title="Latest"/>
+            <item
+                android:id="@+id/item_oldest"
+                android:title="Oldest"/>
+            <item
+                android:id="@+id/item_az"
+                android:title="A to Z"/>
+            <item
+                android:id="@+id/item_za"
+                android:title="Z to A"/>
+            <item
+                android:id="@+id/item_faz"
+                android:title="Favorites"/>
+        </menu>
+    </item>
+
+</menu>
